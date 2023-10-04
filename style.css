@@ -1,0 +1,213 @@
+/* Reset */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  font-family: inherit;
+}
+
+/* Colors */
+
+:root {
+  /* Primary */
+
+  --Cyan: hsl(179, 62%, 43%);
+  --Second-Cyan: hsl(179, 47%, 52%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+
+  /* Neutral */
+
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* Typography */
+
+body {
+  font-family: "Karla", sans-serif;
+  line-height: 1.5;
+  font-size: 100%; /* 16px by default */
+}
+
+:root {
+  --fs: 1rem; /* 16 px */
+  --fs-h1: 1.5rem;
+  --fs-h2: 1.2rem;
+}
+
+/* Typography Media queries */
+
+/* Desktop :  1200px */
+
+@media (min-width: 75em) {
+  :root {
+    --fs: 1.0625rem; /* 17 px */
+    --fs-h1: 1.6rem;
+    --fs-h2: 1.3rem;
+  }
+}
+
+p {
+  font-size: var(--fs);
+  font-weight: 400;
+  color: var(--Desaturated-Red);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+/* Utils */
+
+/* Body */
+
+body {
+  background-color: var(--Light-Gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* main */
+
+.main {
+  max-width: 370px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: grid;
+  grid-template-columns: 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Section */
+
+.section {
+  padding: 2rem;
+}
+
+/* Join */
+
+.join {
+  background-color: var(--White);
+}
+
+.join-title {
+  color: var(--Cyan);
+}
+.join-subtitle {
+  margin-top: 1rem;
+  color: var(--Bright-Yellow);
+  font-weight: 700;
+}
+.join-desc {
+  margin-top: 1rem;
+  color: var(--Grayish-Blue);
+  line-height: 1.8;
+}
+
+/* Sub */
+
+.sub {
+  background-color: var(--Cyan);
+  color: var(--White);
+}
+.sub-price {
+  margin-top: 1rem;
+}
+.sub-big {
+  font-size: calc(var(--fs) * 2);
+  font-weight: 700;
+}
+.sub-gray {
+  margin-left: 0.5rem;
+  opacity: 0.8;
+}
+
+.sub-btn {
+  width: 100%;
+  max-width: 311px;
+  margin-top: 2rem;
+  background-color: var(--Bright-Yellow);
+  padding: 1em;
+  border-radius: 0.5em;
+  color: var(--White);
+  font-size: calc(var(--fs) * 1);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sub-btn:hover {
+  opacity: 0.8;
+}
+/* Why */
+
+.why {
+  background-color: var(--Second-Cyan);
+  color: var(--White);
+}
+.why-list {
+  margin-top: 1rem;
+  list-style: none;
+}
+.why-item {
+  font-size: calc(var(--fs) * 0.9);
+  opacity: 0.9;
+}
+
+/* Media queries */
+
+/* Desktop:  1200px*/
+
+@media (min-width: 75em) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+    max-width: 670px;
+  }
+  .join {
+    grid-column: span 2;
+  }
+}
+
+/* Attribution Styles */
+.attribution {
+  display: none;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
