@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./https://github.com/Web-dev-rafik/single-price-grid-component/blob/main/screenshot.png)
+![](https://github.com/Web-dev-rafik/single-price-grid-component/blob/main/screenshot.png?raw=true)
 
 ### Links
 
