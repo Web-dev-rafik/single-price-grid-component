@@ -22,12 +22,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./https://github.com/Web-dev-rafik/single-price-grid-component/blob/main/screenshot.png)
 
 ### Links
 
-- Solution URL: [Code on Github]()
-- Live Site URL: [Live site URL]()
+- Solution URL: [Code on Github](https://github.com/Web-dev-rafik/single-price-grid-component)
+- Live Site URL: [Live site URL](https://web-dev-rafik.github.io/single-price-grid-component/)
 
 ## My process
 
